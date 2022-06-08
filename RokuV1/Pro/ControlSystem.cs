@@ -58,10 +58,10 @@ namespace Pro
         {
             try
             {
-                CrestronConsole.PrintLine("Hello World!");
-                Roku roku = new Roku();
-                roku.GetApps("192.168.0.103");
-                Console.ReadLine();
+                Console.WriteLine("Hello World!");
+                Roku roku = new Roku("192.168.0.103");
+                roku.GetApps();
+                    Console.ReadLine();
             }
             catch (Exception e)
             {
