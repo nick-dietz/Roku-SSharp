@@ -7,7 +7,6 @@ namespace Roku_SSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             Roku roku  = new Roku("192.168.0.103");
             roku.GetApps();
             Console.ReadLine();
